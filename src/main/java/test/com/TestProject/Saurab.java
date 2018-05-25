@@ -1,10 +1,28 @@
 package test.com.TestProject;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
 public class Saurab {
 
-	public static void main(String[] args) {
-		System.out.println( "Hello Selenium!" );
+	WebDriver driver;
+		@BeforeTest
+		public void beforeTest() 
+		{
+			System.setProperty("webdriver.chrome.driver", "Resource/chromedriver.exe");
+			driver= new  ChromeDriver();
+			driver.get("http://output.jsbin.com/usidix/1");
+			driver.manage().window().maximize();
+		}
 
-	}
+		@AfterTest
+		public void afterTest(){
+
+			driver.quit();
+		}
+
+	
 
 }
