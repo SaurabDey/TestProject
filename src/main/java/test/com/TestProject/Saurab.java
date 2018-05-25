@@ -1,6 +1,8 @@
 package test.com.TestProject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -19,15 +21,17 @@ public class Saurab {
 		}
 		
 		@Test
-		public void f()
+		public void f() throws InterruptedException
 		{
-			
+			Thread.sleep(5000);
+			WebElement ok = driver.findElement(By.xpath("//input[@type = 'button']"));
+			ok.click();
 		}
 
 		@AfterTest
 		public void afterTest(){
 
-			driver.quit();
+//			driver.quit();
 		}
 
 	
