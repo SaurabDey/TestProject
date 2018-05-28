@@ -27,15 +27,10 @@ public class Saurab {
 			System.out.println("Saurab Changes");
 			System.out.println("Vikas Changes");
 
-			System.out.println("Saurab Changes");
 			Thread.sleep(5000);
-
 			System.out.println("Chaitanya Changes");
-
 			WebElement ok = driver.findElement(By.xpath("//input[@type = 'button']"));
-			System.out.println("Saurab Changes");
 			ok.click();
-			System.out.println("Saurab Changes");
 
 		}
 		
