@@ -24,9 +24,11 @@ public class Saurab {
 		public void f() throws InterruptedException
 		{
 			Thread.sleep(5000);
+			System.out.println("Chaitanya Changes");
 			WebElement ok = driver.findElement(By.xpath("//input[@type = 'button']"));
 			ok.click();
 		}
+		
 
 		@AfterTest
 		public void afterTest(){
