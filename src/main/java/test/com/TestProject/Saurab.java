@@ -20,11 +20,18 @@ public class Saurab {
 			driver= new  ChromeDriver();
 			driver.get("http://output.jsbin.com/usidix/1");
 
+			System.out.println("Again check merge issues");
+			System.out.println("Check Merge Issues 1");
+			System.out.println("Again check merge issues");
+
+
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 			System.out.println("Check Merge Issues 1");
 
+
 			driver.manage().window().maximize();
+			System.out.println("Again check merge issues");
 			System.out.println("Check Merge Issues 2");
 			
 			System.out.println("Check Merge Issues 3");
@@ -34,12 +41,19 @@ public class Saurab {
 		public void f() throws InterruptedException
 		{
 
+             System.out.println("Vikas Changes");
+			System.out.println("SaurabI Modified Changes");
+			System.out.println("VikasI modified Changes");
+
+
+
 
 			System.out.println("Chaitanya Changes");
 
              System.out.println("Vikas Changes");
 			System.out.println("SaurabI Modified Changes");
 			System.out.println("VikasI modified Changes");
+
 
 
 			Thread.sleep(5000);
