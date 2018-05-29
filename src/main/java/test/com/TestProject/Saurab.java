@@ -17,7 +17,11 @@ public class Saurab {
 			System.setProperty("webdriver.chrome.driver", "Resource/chromedriver.exe");
 			driver= new  ChromeDriver();
 			driver.get("http://output.jsbin.com/usidix/1");
+			System.out.println("Check Merge Issues 1");
 			driver.manage().window().maximize();
+			System.out.println("Check Merge Issues 2");
+			
+			System.out.println("Check Merge Issues 3");
 		}
 		
 		@Test
