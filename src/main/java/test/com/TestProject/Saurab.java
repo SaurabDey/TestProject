@@ -1,5 +1,7 @@
 package test.com.TestProject;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +19,7 @@ public class Saurab {
 			System.setProperty("webdriver.chrome.driver", "Resource/chromedriver.exe");
 			driver= new  ChromeDriver();
 			driver.get("http://output.jsbin.com/usidix/1");
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 		}
 		
@@ -24,7 +27,7 @@ public class Saurab {
 		public void f() throws InterruptedException
 		{
 
-			System.out.println("Saurab Changes");
+			System.out.println("Chaitanya Changes");
 
 			Thread.sleep(5000);
 			System.out.println("Chaitanya Changes");
