@@ -18,6 +18,8 @@ public class Saurab {
 		{
 			System.setProperty("webdriver.chrome.driver", "Resource/chromedriver.exe");
 			driver= new  ChromeDriver();
+			driver.get("https://www.google.com/");
+			System.out.println("welcome to google");
 			driver.get("http://output.jsbin.com/usidix/1");
 
 			System.out.println("Again check merge issues");
@@ -28,6 +30,7 @@ public class Saurab {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 			System.out.println("Check Merge Issues 1");
+
 
 
 			driver.manage().window().maximize();
