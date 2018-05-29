@@ -17,8 +17,11 @@ public class Saurab {
 			System.setProperty("webdriver.chrome.driver", "Resource/chromedriver.exe");
 			driver= new  ChromeDriver();
 			driver.get("http://output.jsbin.com/usidix/1");
+			System.out.println("Again check merge issues");
 			System.out.println("Check Merge Issues 1");
+			System.out.println("Again check merge issues");
 			driver.manage().window().maximize();
+			System.out.println("Again check merge issues");
 			System.out.println("Check Merge Issues 2");
 			
 			System.out.println("Check Merge Issues 3");
@@ -28,18 +31,13 @@ public class Saurab {
 		public void f() throws InterruptedException
 		{
              System.out.println("Vikas Changes");
-			System.out.println("Saurab Changes");
-			System.out.println("Vikas Changes");
+			System.out.println("SaurabI Modified Changes");
+			System.out.println("VikasI modified Changes");
 
-			System.out.println("Saurab Changes");
 			Thread.sleep(5000);
-
-			System.out.println("Chaitanya Changes");
-
+			System.out.println("ChaitanyaI modified Changes");
 			WebElement ok = driver.findElement(By.xpath("//input[@type = 'button']"));
-			System.out.println("Saurab Changes");
 			ok.click();
-			System.out.println("Saurab Changes");
 
 		}
 		
