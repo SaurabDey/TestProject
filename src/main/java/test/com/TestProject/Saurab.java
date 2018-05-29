@@ -16,7 +16,8 @@ public class Saurab {
 		{
 			System.setProperty("webdriver.chrome.driver", "Resource/chromedriver.exe");
 			driver= new  ChromeDriver();
-			driver.get("http://output.jsbin.com/usidix/1");
+			driver.get("https://www.google.com/");
+			System.out.println("welcome to google");
 			driver.manage().window().maximize();
 		}
 		
